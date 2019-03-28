@@ -1,12 +1,12 @@
 '''
 Considering below binary - We have to find out maximum differnce between node and its ancestor.
-			8
+		    8
 		  // \\
-		  3  10
-		// \\  \\
-	   1    6    14
-          // \\  //
-          4   7 13
+		 3    10
+	       //  \\  \\
+	       1    6    14
+             //\\  //
+            4   7 13
 '''
 
 
