@@ -37,6 +37,16 @@ def get_maximum_diff(curr_node, result):
 
 	return min(minimum_value, curr_node.data), result
 
+# To get height of a Tree
+def height(node):
+	if node is None:
+		return 0
+
+	left_height = height(node.left)
+	right_height = height(node.right)
+
+	return 1+ max(left_height, right_height)
+
 
 if __name__ == '__main__':
 	node_4 = Node(4, None, None)
@@ -53,4 +63,6 @@ if __name__ == '__main__':
 	root = Node(8, node_3, node_10)
 
 	x, res = get_maximum_diff(root, result=_MIN)
-	print(res)
+
+	print('Maximum difference between node and ancestor is : ' + str(res))
+	print('Height of tree is : ' + str(height(root)))
